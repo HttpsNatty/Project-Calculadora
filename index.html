@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Calculadora de Horas</h1>
+        <label for="horaEntrada">Hora de Entrada:</label>
+        <input type="text" id="horaEntrada" placeholder="HH:MM" maxlength="5" oninput="formatarHora(this)"
+            onkeydown="pressEnter(event)">
+        <button onclick="calcularHora()">Calcular</button>
+        <div id="resultado"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <div id="footer">
+        Desenvolvido por <a href="https://github.com/HttpsNatty" target="_blank">Natty</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
