@@ -21,6 +21,43 @@ body {
     width: 90%;
 }
 
+.buttons-container {
+    margin-top: 15px; /* Adiciona espaço acima dos botões */
+}
+.buttons-container button {
+    margin: 5px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Estilo do ícone de hover */
+.info-hover {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Tooltip no hover */
+.info-hover::after {
+    content: attr(data-info);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Mostrar a tooltip ao passar o mouse */
+.info-hover:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 #footer {
     position: fixed;
     bottom: 0;
