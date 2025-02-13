@@ -18,26 +18,11 @@
         <input type="text" id="horaEntrada" placeholder="HH:MM" maxlength="5" oninput="formatarHora(this)"
             onkeydown="pressEnter(event)" autofocus> <!-- Adicionado 'autofocus' -->
 
-        <!-- Botões para os dias da semana com ícones de informação -->
+        <!-- Botões para somar 9 horas -->
         <div class="buttons-container">
-            <button onclick="calcularHora('segTerQui')">
-                <span class="info-hover" data-info="+9h40m">
-                Seg/Ter/Qui
-                </span>
-            </button>
-            <button onclick="calcularHora('quarta')">
-                <span class="info-hover" data-info="+5h30m">
-                Quarta
-                </span>
-            </button>
-            <button onclick="calcularHora('sextaManha')">
-                <span class="info-hover" data-info="+3h30m">
-                Sexta Manhã
-                </span>
-            </button>
-            <button onclick="calcularHora('sextaTarde')">
-                <span class="info-hover" data-info="+5h">
-                Sexta Tarde
+            <button onclick="calcularHora()">
+                <span class="info-hover" data-info="+9h00m">
+                    Calcular
                 </span>
             </button>
         </div>

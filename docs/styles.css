@@ -22,10 +22,7 @@ body {
 }
 
 .buttons-container {
-    margin-top: 15px; /* Adiciona espaço acima dos botões */
-}
-.buttons-container button {
-    margin: 5px; /* Adiciona espaçamento entre os botões */
+    margin-top: 15px;
 }
 
 /* Estilo do ícone de hover */
